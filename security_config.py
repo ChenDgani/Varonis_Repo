@@ -12,9 +12,9 @@ repo = github_access.get_repo(repo_name)
 
 def validate_repo_private():
   if not repo.private:
-    print("Repository {repo.full_name} was not private! Now it's private")
+    print(f"Repository {repo.full_name} was not private! Now it's private (Assuming this is the requirement,in real life change it with repo.edit(private=True))")
   else:
-    print("Repository {repo.full_name} is indeed in private mode")
+    print(f"Repository {repo.full_name} is indeed in private mode")
 
 def check_code_scanning_setup():
     try:
@@ -23,17 +23,16 @@ def check_code_scanning_setup():
         print("Code scanning is already configured.")
     except:
         print("Code scanning is not configured.")
-      
-        advise_on_code_scanning_setup()
+        scanning_setup() # Describe how to manually create one
 
-def advise_on_code_scanning_setup():
+def scanning_setup():
     print("To configure code scanning, follow these steps:")
     print("1. Go to your GitHub repository's homepage.")
     print("2. Click on 'Actions' > 'New workflow'.")
     print("3. Find 'Code scanning' and set up the workflow by following the GitHub's guidance.")
     print("Or add a 'code_scanning.yml' file to '.github/workflows' directory with your desired code scanning configuration.")
 
-def secret_scanning():
+def check_and_set_secret_scanning():
     headers = {
         "Authorization": f"token {token}",
         "Accept": "application/vnd.github+json"
@@ -68,7 +67,7 @@ def secret_scanning():
 # Execute the functions
 validate_repo_private()
 check_code_scanning_setup()
-secret_scanning()
+check_and_set_secret_scanning()
 
 
     
