@@ -13,7 +13,7 @@ This code focused on 5 repository setting keys:
 1. **Private/Public** Repository Status.
 2. **Secret Scanning**.
 3. **Code Scanning**.
-4. **Dependabot Alerts**.
+4. **Access Token Expiration Policies***.
 5. **Branch Protection**
 
 These configurations are evaluated against the following NIST keys:
@@ -21,7 +21,7 @@ These configurations are evaluated against the following NIST keys:
 Access Control
 System and Information Integrity
 Configuration Management
-Risk Assessment
+Audit and Accountability
 System and Communications Protection
 
 ## In-Depth Analysis: Secret Scanning
