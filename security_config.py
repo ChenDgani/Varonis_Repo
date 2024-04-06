@@ -3,7 +3,7 @@ import requests
 import os
 
 # Authentication using the token secret
-token = os.getenv('TOKEN')
+token = os.getenv('GITHUB_TOKEN')
 github_access = Github(token)
 
 # The repo
