@@ -10,11 +10,11 @@ https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-f
 
 This code focused on 5 repository setting keys:
 
-Private/Public Repository Status
-Secret Scanning
-Code Scanning
-Dependabot Alerts
-Branch Protection
+_1. Private/Public Repository Status
+_2. Secret Scanning
+_3. Code Scanning
+_4. Dependabot Alerts
+_5. Branch Protection
 
 These configurations are evaluated against the following NIST keys:
 
