@@ -13,6 +13,6 @@ jobs:
       - run: |
           pip install --upgrade pip
           pip install PyGithub
-      - run: python config_security.py
+      - run: python security_config.py
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
