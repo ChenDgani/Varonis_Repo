@@ -2,11 +2,11 @@ from github import Github
 import requests
 import os
 
-# Authentication using the token from GitHub Secrets
+# Authentication using the token secret
 token = os.getenv('TOKEN')
 github_access = Github(token)
 
-# The repository to manage
+# The repo
 repo_name = 'ChenDgani/Varonis_Repo'
 repo = github_access.get_repo(repo_name)
 
@@ -23,7 +23,7 @@ def check_code_scanning_setup():
         print("Code scanning is already configured.")
     except:
         print("Code scanning is not configured.")
-        # Provide instructions or automate workflow file creation
+      
         advise_on_code_scanning_setup()
 
 def advise_on_code_scanning_setup():
@@ -32,6 +32,8 @@ def advise_on_code_scanning_setup():
     print("2. Click on 'Actions' > 'New workflow'.")
     print("3. Find 'Code scanning' and set up the workflow by following the GitHub's guidance.")
     print("Or add a 'code_scanning.yml' file to '.github/workflows' directory with your desired code scanning configuration.")
+
+
 
 
 # Execute the functions
