@@ -30,7 +30,7 @@ def scanning_setup():
     print("1. Go to your GitHub repository's homepage.")
     print("2. Click on 'Actions' > 'New workflow'.")
     print("3. Find 'Code scanning' and set up the workflow by following the GitHub's guidance.")
-    print("Or add a 'code_scanning.yml' file to '.github/workflows' directory with your desired code scanning configuration.")
+    print("Or add a 'code_scanning.yml' file to '.github/workflows' directory with your desired code scanning configuration. ")
 
 def check_and_set_secret_scanning():
     headers = {
