@@ -18,11 +18,11 @@ This code focused on 5 repository setting keys:
 
 These configurations are evaluated against the following NIST keys:
 
-Access Control
-System and Information Integrity
-Configuration Management
-Audit and Accountability
-System and Communications Protection
+1. Access Control
+2. System and Information Integrity
+3. Configuration Management
+4. Audit and Accountability
+5. System and Communications Protection
 
 ## In-Depth Analysis: Secret Scanning
 
