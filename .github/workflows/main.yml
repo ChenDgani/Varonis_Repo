@@ -1,0 +1,18 @@
+name: Python Workflow
+
+on: push
+
+jobs:
+  script: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: |
+          pip install --upgrade pip
+          pip install PyGithub
+      - run: python config_security.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
