@@ -15,4 +15,4 @@ jobs:
           pip install PyGithub
       - run: python security_config.py
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PyGithub script }}
