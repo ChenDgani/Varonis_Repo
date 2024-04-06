@@ -50,7 +50,10 @@ def check_and_set_secret_scanning():
         else:
             print("Secret Scanning is not enabled. Attempting to enable it...")
     else:
-        print("Failed to check Secret Scanning status.")
+        print(f"Failed to check Secret Scanning status. Status code: {response.status_code}")
+        # Log detailed error message from GitHub
+        if 'message' in response.json():
+            print("GitHub API error message:", response.json()['message'])
         return False
 
     # Enable Secret Scanning
