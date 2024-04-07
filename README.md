@@ -101,6 +101,8 @@ When users store their secrets in an insecure manner (due to lack of knowledge, 
 
 for expand our scripts into a framework for monitoring and fixing a large number of misconfigurations across multiple services, we should:
 
+The codebase should be regularly scanned for vulnerabilities, and the build process should integrate multiple layers of automated security tests. The CI/CD infrastructure, which automates the process of building, testing, and deploying applications, should be tightly secured, because any breach can lead to catastrophic supply chain attacks affecting the organization’s customers.
+
 - The system will contain a **services DB** about all the resources across services in use (GCP resources, Zoom setting, etc). The DB will Store the desired state configurations for services and their resources. 
 - **API componenets** interact with specific service APIs (GCP, Zoom, etc.)
 - **Detection Engine** that will scans configurations across services to find deviations from the DB's desired states.
