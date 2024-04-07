@@ -77,10 +77,10 @@ def verify_branch_protection():
   if response.status_code == 200:
         print("Branch protection rules found for main branch.")
         return True
-    elif response.status_code == 404:
+  elif response.status_code == 404:
         print("No branch protection rules found for main branch.")
         return False
-    else:
+  else:
         print("Failed to check branch protection status. Status code:", response.status_code)
         return None
 
