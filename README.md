@@ -13,7 +13,7 @@ This code focused on 5 repository setting keys:
 1. **Private/Public** Repository Status.
 2. **Secret Scanning**.
 3. **Code Scanning**.
-4. **Access Token Expiration Policies***.
+4. **Access Token Expiration Policies**.
 5. **Branch Protection**
 
 These configurations are evaluated against the following NIST keys:
