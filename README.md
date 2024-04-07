@@ -122,6 +122,8 @@ for expand our scripts into a framework for monitoring and fixing a large number
 4. **Schedule execution**: Set up a cron job or similar scheduler to run the checks periodically.
 5. **Monitor alerts**: Keep an eye on generated alerts and review automated fixes.
 
+#### Every time a push is made to main, the script will run to ensure the settings have not changed over time and your environment is secure
+
 # ENJOY !
 
 
