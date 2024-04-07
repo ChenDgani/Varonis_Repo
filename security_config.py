@@ -40,8 +40,10 @@ def validate_dependabot_config():
         print("Dependabot configuration found.")
   except Exception as e:
         print("Dependabot configuration not found or an error occurred:", e)
-
-
+        print("For keeping you dependecied updated and secure, please create a dependabot.yml in your repository")
+        print("Dependabot uses this information to check for outdated packages and applications.")
+        print("When Dependabot identifies an outdated dependency, it raises a pull request to update the manifest to the latest version of the dependency. ")
+    
 # Execute the functions
 validate_repo_private()
 check_code_scanning_setup()
