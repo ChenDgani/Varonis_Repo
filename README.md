@@ -12,15 +12,15 @@ This code focused on 5 repository setting keys:
 
 1. **Private/Public** Repository Status.
 2. **Secret Scanning**.
-3. **Code Scanning**.
+3. **Keeping your dependencies updated automatically with Dependabot version updates**.
 4. **Access Token Expiration Policies**.
-5. **Branch Protection**
+5. **Code scanning**
 
 These configurations are evaluated against the following NIST keys:
 
 1. Access Control
 2. System and Information Integrity
-3. Configuration Management
+3. System and Services Acquisition
 4. Audit and Accountability
 5. System and Communications Protection
 
