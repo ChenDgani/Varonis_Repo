@@ -102,10 +102,12 @@ When users store their secrets in an insecure manner (due to lack of knowledge, 
 for expand our scripts into a framework for monitoring and fixing a large number of misconfigurations across multiple services, we should:
 
 - The system will contain a **services DB** about all the resources across services in use (GCP resources, Zoom setting, etc)
+- **API componenets** interact with specific service APIs (GCP, Zoom, etc.)
 - **Detection Engine** that will scans configurations across services to find deviations from the DB's desired states.
 - **Alerting Mechanism**: Immediate notifications for detected misconfigurations or security risks.
 - **Automated Fixing Mechanism**: Uses APIs to automatically fix misconfigurations. Detailed instructions are provided for fixing configurations that can't be fixed automatically.
 - **Logging and Reporting**: Logs all detected problems and actions, generating compliance and audit reports.
+- **UI dashboard**: Present the overview of the system's status, the deceted problems and the actions taken or the manual actions explanation we need to take.
 - **Scheduled Scans**: Keep security standards up to date with regular checks.
 - This system should be managed by an engineer who will always be aware of new security risks in services that interface with the repo.
 
