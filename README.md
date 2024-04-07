@@ -119,7 +119,6 @@ for expand our scripts into a framework for monitoring and fixing a large number
 1. **Clone the repository**: Obtain the latest version of the security main script.
 2. **Install dependencies**: Ensure all required libraries are installed.
 3. **Configure API keys**: Securely store your service API keys for authentication.
-4. **Schedule execution**: Set up a cron job or similar scheduler to run the checks periodically.
 5. **Monitor alerts**: Keep an eye on generated alerts and review automated fixes.
 
 #### Every time a push is made to main, the script will run to ensure the settings have not changed over time and your environment is secure.
