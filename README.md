@@ -30,6 +30,11 @@ These configurations are evaluated against the following NIST keys:
 **Security impact**: with public repositories your code is expose to the world with your sensetive information.
 **Detection**: if your project should to be with a privte repository, go to the repository setting and change it or do it with GitHub's REST API endpoints for repositories: https://docs.github.com/en/rest/repos?apiVersion=2022-11-28
 
+If your repository is not private, my script will change it to private:
+
+![image](https://github.com/ChenDgani/Varonis_Repo/assets/112262763/1dbf2759-579f-4fb1-ace4-c5d1947f36fe)
+
+
 ### Keeping your dependencies updated automatically with Dependabot version updates
 **Security impact**: Outdated dependencies can introduce vulnerabilities into your applications.
 **Detection**: Enable Dependabot version updates by checking a dependabot.yml configuration file into your repository. You can use this GitHub's guid: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
