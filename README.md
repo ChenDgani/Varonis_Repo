@@ -61,18 +61,18 @@ If you didn't configure a code scanning mode, my scirpt will alert you and guide
 
 Most GitHub projects use tokens or private keys to authenticate communication between project code and external services. Service providers often issue secrets such as private keys or tokens to control access to a project. 
 
-However, when you add secrets to a Git repository, this creates a serious security risk, because anyone with read access to your repository can use these secrets to access privileged external services. Secrets must be stored in a dedicated secure location outside your project’s repository.
+When you add secrets to a Git repository, this creates a serious security risk, because anyone with read access to your repository can use these secrets to access privileged external services. Secrets must be stored in a dedicated secure location outside your project’s repository.
 
-GitHub secret scanning is a set of security features that helps secure code and keep secrets safe across organizations and repositories. Some of these security features are available on all plans, while businesses using GitHub Advanced Security can take advantage of additional features. All public repositories on GitHub also have GitHub Advanced Security enabled.
+GitHub secret scanning is a set of security features that helps secure code and keep secrets safe across organizations and repositories. 
 
 ### Best Practice
 
-Activating secret scanning on all repositories is paramount. 
-It ensures timely alerts for any sensitive information inadvertently exposed, allowing for swift remediation actions to mitigate potential security risks.
+Make sure all repositories are scanned secretly. 
+Whenever sensitive information is inadvertently exposed, it alerts us quickly, so we can mitigate risks quickly.
 
 ### Risks
 
-Your repository is vulnerable to unauthorized access if you disable or overlook secret scanning. Exposed secrets can lead to data breaches, compromising both project integrity and user privacy.
+Exposed secrets can lead to data breaches, harming both the integrity of the project and the privacy of the user. The disclosure of secrets can result in unauthorized access to third-party applications and unwanted communication.
 
 ### Manual Configuration Steps
 
