@@ -36,11 +36,11 @@ These configurations are evaluated against the following NIST keys:
 
 ### Enable and enforce 2FA for GitHub
 **Security impact**: Two-factor authentication adds an additional layer of security to the authentication process by making it harder for attackers to gain access to a person's devices or online accounts.
-**Detection**: Configure it with your GitHub's settings and use this GitHub's guid: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication
+**Detection**: Configure it with your GitHub's settings and use this GitHub's guide: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication
 
 ### Code scanning
 **Security impact**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find **security vulnerabilities** and coding errors. 
-**Detection**: Managing your code scanning configuration with this GitHub's guid: https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration
+**Detection**: Managing your code scanning configuration with this GitHub's guide: https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration
 
 ## In-Depth Analysis: Secret Scanning
 
