@@ -33,44 +33,18 @@ def scanning_setup():
     print("3. Find 'Code scanning' and set up the workflow by following the GitHub's guidance.")
     print("Or add a 'code_scanning.yml' file to '.github/workflows' directory with your desired code scanning configuration. ")
 
-def check_and_set_secret_scanning():
-    headers = {
-        "Authorization": f"token {token}",
-        "Accept": "application/vnd.github+json"
-    }
-
-    # Check Secret Scanning status
-    check_url = f"https://api.github.com/repos/{repo_name}/secret-scanning"
-    response = requests.get(check_url, headers=headers)
-    
-    if response.status_code == 200:
-        status = response.json().get('enabled', False)
-        if status:
-            print("Secret Scanning is already enabled.")
-            return True
-        else:
-            print("Secret Scanning is not enabled. Attempting to enable it...")
-    else:
-        print(f"Failed to check Secret Scanning status. Status code: {response.status_code}")
-        # Log detailed error message from GitHub
-        if 'message' in response.json():
-            print("GitHub API error message:", response.json()['message'])
-        return False
-
-    # Enable Secret Scanning
-    enable_url = f"https://api.github.com/repos/{repo_name}/secret-scanning/enable"
-    enable_response = requests.post(enable_url, headers=headers)
-    
-    if enable_response.status_code == 204:
-        print("Secret Scanning has been successfully enabled.")
-        return True
-    else:
-        print("Failed to enable Secret Scanning.")
-        return False
+def validate_dependabot_config():
+  try:
+        # Attempt to get the dependabot.yml file
+        config_file = repo.get_contents(".github/dependabot.yml")
+        print("Dependabot configuration found.")
+  except Exception as e:
+        print("Dependabot configuration not found or an error occurred:", e)
 
 
 # Execute the functions
 validate_repo_private()
 check_code_scanning_setup()
-check_and_set_secret_scanning()
+validate_dependabot_config()
+
     
