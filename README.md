@@ -1,7 +1,7 @@
 # Varonis Secure Repository
 
 Welcome to GitHub Secure repository Guide.
-This documnet provides a overvew of implementing and maintaining security configuration for you Varonis secure repository.
+This documnet provides a overview of implementing and maintaining security configuration for you Varonis secure repository.
 By automating these configurations we aim safeguard repositories against common security threats, ensuring best practices by NIST.
 These all security configurations recommendations are from Github official doc:
 https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository
