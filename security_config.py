@@ -11,6 +11,7 @@ repo_name = 'ChenDgani/Varonis_Repo'
 repo = github_access.get_repo(repo_name)
 
 def validate_repo_private():
+  print("Describes a scenario where the repository is supposed to be private, and each push is checked for this purpose")
   if not repo.private:
     print(f"Repository {repo.full_name} was not private! Now it's private (Assuming this is the requirement,in real life change it with repo.edit(private=True))")
   else:
@@ -67,10 +68,26 @@ def check_and_set_secret_scanning():
         print("Failed to enable Secret Scanning.")
         return False
 
+def verify_branch_protection():
+  url = f"https://api.github.com/repos/{repo_name}/branches/main/protection"
+  headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+  if response.status_code == 200:
+        print("Branch protection rules found for main branch.")
+        return True
+    elif response.status_code == 404:
+        print("No branch protection rules found for main branch.")
+        return False
+    else:
+        print("Failed to check branch protection status. Status code:", response.status_code)
+        return None
+
 # Execute the functions
 validate_repo_private()
 check_code_scanning_setup()
 check_and_set_secret_scanning()
-
+verify_branch_protection()
 
     
