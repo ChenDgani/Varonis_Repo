@@ -40,7 +40,7 @@ def validate_dependabot_config():
         print("Dependabot configuration found.")
   except:
         print("Dependabot configuration file doesn't exist")
-        print("For keeping you dependecied updated and secure, please create a dependabot.yml in your repository")
+        print("For keeping you dependecied updated and secure, please create a dependabot.yml in your repository. You can use this GitHub's guid: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates")
         print("Dependabot uses this information to check for outdated packages and applications.")
         print("When Dependabot identifies an outdated dependency, it raises a pull request to update the manifest to the latest version of the dependency. ")
     
