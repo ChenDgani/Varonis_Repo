@@ -39,6 +39,11 @@ If your repository is not private, my script will change it to private:
 **Security impact**: Outdated dependencies can introduce vulnerabilities into your applications.
 **Detection**: Enable Dependabot version updates by checking a dependabot.yml configuration file into your repository. You can use this GitHub's guid: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
 
+If you don't have a dependabot.yml configuration file my scirpt will alert you and guide you on how to create one:
+
+![image](https://github.com/ChenDgani/Varonis_Repo/assets/112262763/132f6786-19b3-4b2f-a463-ce7281bce831)
+
+
 ### Enable and enforce 2FA for GitHub
 **Security impact**: Two-factor authentication adds an additional layer of security to the authentication process by making it harder for attackers to gain access to a person's devices or online accounts.
 **Detection**: Configure it with your GitHub's settings and use this GitHub's guide: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication
@@ -46,6 +51,11 @@ If your repository is not private, my script will change it to private:
 ### Code scanning
 **Security impact**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find **security vulnerabilities** and coding errors. 
 **Detection**: Managing your code scanning configuration with this GitHub's guide: https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration
+
+If you didn't configure a code scanning mode, my scirpt will alert you and guide you on how to create one:
+
+![image](https://github.com/ChenDgani/Varonis_Repo/assets/112262763/203633ab-d12d-4d76-bdc4-49f24ac0437c)
+
 
 ## In-Depth Analysis: Secret Scanning
 
