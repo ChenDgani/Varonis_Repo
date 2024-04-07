@@ -38,8 +38,8 @@ def validate_dependabot_config():
         # Attempt to get the dependabot.yml file
         config_file = repo.get_contents(".github/dependabot.yml")
         print("Dependabot configuration found.")
-  except Exception as e:
-        print("Dependabot configuration not found or an error occurred:", e)
+  except:
+        print("Dependabot configuration file doesn't exist")
         print("For keeping you dependecied updated and secure, please create a dependabot.yml in your repository")
         print("Dependabot uses this information to check for outdated packages and applications.")
         print("When Dependabot identifies an outdated dependency, it raises a pull request to update the manifest to the latest version of the dependency. ")
