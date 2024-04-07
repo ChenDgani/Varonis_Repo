@@ -101,7 +101,7 @@ When users store their secrets in an insecure manner (due to lack of knowledge, 
 
 for expand our scripts into a framework for monitoring and fixing a large number of misconfigurations across multiple services, we should:
 
-- The system will contain a **services DB** about all the resources across services in use (GCP resources, Zoom setting, etc)
+- The system will contain a **services DB** about all the resources across services in use (GCP resources, Zoom setting, etc). The DB will Store the desired state configurations for services and their resources. 
 - **API componenets** interact with specific service APIs (GCP, Zoom, etc.)
 - **Detection Engine** that will scans configurations across services to find deviations from the DB's desired states.
 - **Alerting Mechanism**: Immediate notifications for detected misconfigurations or security risks.
