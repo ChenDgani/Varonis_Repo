@@ -21,7 +21,7 @@ These configurations are evaluated against the following NIST keys:
 1. Access Control
 2. System and Information Integrity
 3. System and Services Acquisition
-4. Audit and Accountability
+4. Access Control
 5. System and Communications Protection
 
 ## The security configurations with their impact
