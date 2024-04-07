@@ -24,7 +24,7 @@ These configurations are evaluated against the following NIST keys:
 4. Audit and Accountability
 5. System and Communications Protection
 
-## The security Configurations with their impact
+## The security configurations with their impact
 
 ### Private/Public Repository Status
 **Security impact**: with public repositories your code is expose to the world with your sensetive information.
