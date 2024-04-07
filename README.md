@@ -13,7 +13,7 @@ This code focused on 5 repository setting keys:
 1. **Private/Public** Repository Status.
 2. **Secret Scanning**.
 3. **Keeping your dependencies updated automatically with Dependabot version updates**.
-4. **Access Token Expiration Policies**.
+4. **Enable and enforce 2FA for GitHub**.
 5. **Code scanning**
 
 These configurations are evaluated against the following NIST keys:
@@ -23,6 +23,24 @@ These configurations are evaluated against the following NIST keys:
 3. System and Services Acquisition
 4. Audit and Accountability
 5. System and Communications Protection
+
+## The security Configurations with their impact
+
+### Private/Public Repository Status
+**Security impact**: with public repositories your code is expose to the world with your sensetive information.
+**Detection**: if your project should to be with a privte repository, go to the repository setting and change it or do it with GitHub's REST API endpoints for repositories: https://docs.github.com/en/rest/repos?apiVersion=2022-11-28
+
+### Keeping your dependencies updated automatically with Dependabot version updates
+**Security impact**: Outdated dependencies can introduce vulnerabilities into your applications.
+**Detection**: Enable Dependabot version updates by checking a dependabot.yml configuration file into your repository. You can use this GitHub's guid: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+### Enable and enforce 2FA for GitHub
+**Security impact**: Two-factor authentication adds an additional layer of security to the authentication process by making it harder for attackers to gain access to a person's devices or online accounts.
+**Detection**: Configure it with your GitHub's settings and use this GitHub's guid: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication
+
+### Code scanning
+**Security impact**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find **security vulnerabilities** and coding errors. 
+**Detection**: Managing your code scanning configuration with this GitHub's guid: https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration
 
 ## In-Depth Analysis: Secret Scanning
 
